@@ -1,0 +1,4 @@
+This is the first test. 
+stop
+Hope it works. 
+I can select to which file to record! exit

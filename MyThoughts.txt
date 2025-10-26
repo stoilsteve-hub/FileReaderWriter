@@ -2,3 +2,6 @@ This is the first test.
 stop
 Hope it works. 
 I can select to which file to record! exit
+[2025-10-26 21:23:58] This is the first test after adding the menu options
+[2025-10-26 21:24:28] The time stamp works too! exit
+[2025-10-26 21:24:32] 

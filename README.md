@@ -7,24 +7,24 @@ It lets users write timestamped notes or messages into a text file and later rea
 
 ## 🚀 Features
 
-- ✅ Create or append to any text file
-- 🕒 Auto-timestamped entries using `LocalDateTime`
-- 📖 Read saved content directly from the file
-- 💬 Simple interactive menu
-- ⚙️ Handles missing files and I/O errors gracefully
+- ✅ Create or append to any text file  
+- 🕒 Auto-timestamped entries using `LocalDateTime`  
+- 📖 Read saved content directly from the file  
+- 💬 Simple interactive menu  
+- ⚙️ Handles missing files and I/O errors gracefully  
 
 ---
 
 ## 🧠 How It Works
 
-1. When you start the program, it asks for a **filename** (without extension).
+1. When you start the program, it asks for a **filename** (without extension).  
 2. You’ll see a **menu**:
-    - `1️⃣` Write to file
-    - `2️⃣` Read file
-    - `3️⃣` Exit
+   - `1️⃣` Write to file  
+   - `2️⃣` Read file  
+   - `3️⃣` Exit  
 
-3. When writing, each line is saved with a timestamp.
-    - Type `exit` when you’re done writing.
+3. When writing, each line is saved with a timestamp.  
+   - Type `exit` when you’re done writing.  
 
 4. When reading, the file’s contents (with timestamps) are displayed in the terminal.
 

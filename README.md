@@ -1,29 +1,55 @@
 # 📝 FileReaderWriter (Java)
 
-A simple Java console program that allows users to **write text to a file** and then **read it back** — all in one run.  
-It’s a great beginner-friendly example of Java file handling using `BufferedWriter` and `BufferedReader`.
+A simple **Java console application** for reading and writing text files with automatic **timestamps**.  
+It lets users write timestamped notes or messages into a text file and later read them back — all from the terminal.
 
 ---
 
 ## 🚀 Features
-- ✍️ Create or append to a `.txt` file
-- 💾 Save user input line-by-line
-- 📖 Read and display the saved file content
-- 🧱 Demonstrates use of:
-    - `FileWriter`
-    - `BufferedWriter`
-    - `FileReader`
-    - `BufferedReader`
-    - `Scanner` for user input
+
+- ✅ Create or append to any text file
+- 🕒 Auto-timestamped entries using `LocalDateTime`
+- 📖 Read saved content directly from the file
+- 💬 Simple interactive menu
+- ⚙️ Handles missing files and I/O errors gracefully
 
 ---
 
-## 📂 How It Works
-1. The program asks you to **enter a filename** (without extension).
-2. You type in lines of text — each will be saved to that file.
-3. Type `exit` when you’re done writing.
-4. The program then reads and displays everything from the file.
+## 🧠 How It Works
+
+1. When you start the program, it asks for a **filename** (without extension).
+2. You’ll see a **menu**:
+    - `1️⃣` Write to file
+    - `2️⃣` Read file
+    - `3️⃣` Exit
+
+3. When writing, each line is saved with a timestamp.
+    - Type `exit` when you’re done writing.
+
+4. When reading, the file’s contents (with timestamps) are displayed in the terminal.
 
 ---
 
-## 🧩 Example
+## 💻 Example Output
+
+```bash
+Enter filename (without extension): notes
+
+--- MENU ---
+1️⃣  Write to file
+2️⃣  Read file
+3️⃣  Exit
+Choose an option: 1
+Type your lines (type 'exit' to stop writing):
+Meeting with team at 10AM
+exit
+✅ Lines saved successfully to notes.txt
+
+--- MENU ---
+1️⃣  Write to file
+2️⃣  Read file
+3️⃣  Exit
+Choose an option: 2
+
+--- Reading from notes.txt ---
+[2025-10-26 14:03:12] Meeting with team at 10AM
